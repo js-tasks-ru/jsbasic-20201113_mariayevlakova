@@ -17,4 +17,4 @@ function getMinMax(str) {
 
   return result = {min, max};
   }
-console.log (getMinMax('1, -5.8  10,  34 + -5.3  73'));
+
