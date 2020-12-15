@@ -5,4 +5,16 @@
  */
 function getMinMax(str) {
   // ваш код...
-}
+  let newStr = str
+  .split(' ')
+  .join(',')
+  .split(',')
+  .map (item => parseFloat(item))
+  .filter (item => !isNaN(item));
+
+  let max = Math.max(...newStr);
+  let min = Math.min(...newStr);
+
+  return result = {min, max};
+  }
+
